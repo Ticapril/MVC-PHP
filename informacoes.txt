@@ -1,0 +1,14 @@
+query strings! --> exemplo https://www.youtube.com/watch?v=pEG-jVaAjkY&list
+Exemplos -> http://localhost/mvc-php/[?pagina=home&Id=2] --> query strings;
+
+
+CRIAÇÃO DE UM COMPOSER.JSON
+ESTRUTURA 
+{
+    "require": {
+        
+    }
+}
+
+baixar o composer.phar em
+packagist.org

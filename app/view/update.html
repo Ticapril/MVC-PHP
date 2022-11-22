@@ -1,0 +1,17 @@
+
+<section>
+        <h1>Editar publicacao</h1>
+        <br>
+        
+        <form method="post" action="?pagina=admin&metodo=update&id={{id}}">
+                <span>Titulo</span>
+                <br>
+                <input type="text" name="titulo" value="{{titulo}}">
+                <br><br>
+                <span>Conteudo</span>
+                <br>
+                <textarea name="conteudo" id="" cols="25" rows="5">{{conteudo}}</textarea>
+                <br>
+                <input type="submit"  value="editar"/>
+        </form>
+</section>

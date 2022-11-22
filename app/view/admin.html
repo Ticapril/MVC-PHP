@@ -1,0 +1,31 @@
+<style>
+        th {
+                padding: 10px;
+        }
+</style>
+<section>
+        <h1 class="danger__gabriel">Gerenciador de Conteudo</h1>
+        <br>
+        <a href="http://localhost/mvc-php/?pagina=admin&metodo=create">Criar Publicacao</a><br>
+        <br>
+        <hr>
+        <br>
+        <table border="1">
+                <tr>
+                        <th>ID</th>
+                        <th>Titulo</th>
+                        <th>Alteracao</th>
+                        <th>delecao</th>
+                </tr>
+        {% for postagem in postagens %}
+                <tr>
+                        <th>{{postagem.id_postagem}}</th>
+                        <th>{{postagem.titulo_postagem}}</th>
+                        <th><a href="http://localhost/mvc-php/?pagina=admin&metodo=showRecord&id={{postagem.id_postagem}}&titulo={{postagem.titulo_postagem}}&conteudo={{postagem.conteudo_postagem}}">Alterar</a></th>
+                        <th>
+                            <a href="?pagina=admin&metodo=delete&id={{postagem.id_postagem}}">Excluir</a>
+                        </th>
+                </tr>
+        {% endfor %}
+        </table>
+</section>
